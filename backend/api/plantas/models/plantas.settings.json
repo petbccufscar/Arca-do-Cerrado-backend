@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Plantas",
+  "info": {
+    "name": "Plantas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "Cor": {
+      "type": "string"
+    }
+  }
+}
