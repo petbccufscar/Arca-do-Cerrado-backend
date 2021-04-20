@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/species-orchards",
+      "handler": "species-orchard.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/species-orchards/count",
+      "handler": "species-orchard.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/species-orchards/:id",
+      "handler": "species-orchard.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/species-orchards",
+      "handler": "species-orchard.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/species-orchards/:id",
+      "handler": "species-orchard.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/species-orchards/:id",
+      "handler": "species-orchard.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

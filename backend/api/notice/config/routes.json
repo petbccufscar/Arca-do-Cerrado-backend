@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/plantas",
-      "handler": "plantas.find",
+      "path": "/notices",
+      "handler": "notice.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/plantas/count",
-      "handler": "plantas.count",
+      "path": "/notices/count",
+      "handler": "notice.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/plantas/:id",
-      "handler": "plantas.findOne",
+      "path": "/notices/:id",
+      "handler": "notice.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/plantas",
-      "handler": "plantas.create",
+      "path": "/notices",
+      "handler": "notice.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/plantas/:id",
-      "handler": "plantas.update",
+      "path": "/notices/:id",
+      "handler": "notice.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/plantas/:id",
-      "handler": "plantas.delete",
+      "path": "/notices/:id",
+      "handler": "notice.delete",
       "config": {
         "policies": []
       }

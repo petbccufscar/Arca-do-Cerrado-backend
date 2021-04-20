@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Notice",
+  "info": {
+    "name": "Notice"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Id_Notice": {
+      "unique": true,
+      "model": "blog",
+      "via": "Id_Notice"
+    },
+    "Id_species_orchards": {
+      "unique": true,
+      "collection": "species-orchard"
+    }
+  }
+}

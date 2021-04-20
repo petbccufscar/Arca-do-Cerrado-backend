@@ -1,19 +1,17 @@
 {
   "kind": "collectionType",
-  "collectionName": "Plantas",
+  "collectionName": "Informacao",
   "info": {
-    "name": "Plantas"
+    "name": "Informacao"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "nome": {
-      "type": "string"
-    },
-    "Cor": {
-      "type": "string"
+    "blog": {
+      "model": "blog",
+      "via": "informacaos"
     }
   }
 }

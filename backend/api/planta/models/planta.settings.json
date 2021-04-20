@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Especies",
+  "info": {
+    "name": "Especies"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Body": {
+      "type": "richtext"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "id_species_orchards": {
+      "collection": "species-orchard"
+    }
+  }
+}
