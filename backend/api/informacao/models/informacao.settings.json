@@ -2,16 +2,33 @@
   "kind": "collectionType",
   "collectionName": "Informacao",
   "info": {
-    "name": "Informacao"
+    "name": "Content"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "blog": {
-      "model": "blog",
-      "via": "informacaos"
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Body": {
+      "type": "richtext"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Date": {
+      "type": "date"
     }
   }
 }

@@ -2,21 +2,39 @@
   "kind": "collectionType",
   "collectionName": "Notice",
   "info": {
-    "name": "Notice"
+    "name": "Noticie"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Id_Notice": {
+    "id_species_orchards": {
       "unique": true,
-      "model": "blog",
-      "via": "Id_Notice"
+      "collection": "species-orchard",
+      "via": "noticies",
+      "dominant": true
     },
-    "Id_species_orchards": {
-      "unique": true,
-      "collection": "species-orchard"
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Body": {
+      "type": "richtext"
     }
   }
 }
