@@ -10,9 +10,8 @@
   },
   "attributes": {
     "id_species_orchards": {
-      "unique": true,
-      "collection": "species-orchard",
       "via": "noticies",
+      "collection": "species-orchard",
       "dominant": true
     },
     "Title": {

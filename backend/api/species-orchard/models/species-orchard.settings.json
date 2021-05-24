@@ -40,8 +40,11 @@
       "required": false
     },
     "noticies": {
-      "via": "id_species_orchards",
-      "collection": "notice"
+      "collection": "notice",
+      "via": "id_species_orchards"
+    },
+    "Position": {
+      "type": "string"
     }
   }
 }
